@@ -1,0 +1,21 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+footer{
+    background-color: rgb(255, 204, 0);
+    padding: 20px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.imageContainer{
+    background-color: white;
+    border-radius: 1000px;
+    height: 50px;
+    width: 90px;
+    
+}
