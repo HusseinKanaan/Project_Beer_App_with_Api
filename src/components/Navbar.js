@@ -5,7 +5,6 @@ const Navbar= ()=> {
         <>
         <footer>
             <div className='imageContainer'>
-                
             </div>
         </footer>
         </>

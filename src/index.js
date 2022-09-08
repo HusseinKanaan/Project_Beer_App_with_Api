@@ -1,22 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import BeersOverview from './pages/BeersOverview'
+import BeersOverview from './pages/BeersOverview';
+import BeersDetails from './pages/BeersDetails';
+import Home from './pages/Home';
 import reportWebVitals from './reportWebVitals';
 
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
+/* import Navbar from './components/Navbar'; */
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    <Routes>
-      <Route path ='/' element ={<App />}/>
-        <Route path='/beersOverview' element={<BeersOverview/>}/>
-    </Routes>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/beersoverview' element={<BeersOverview />} />
+        <Route path='/beersovervuew/:beersid' element={<BeersDetails />} />
+      </Routes>
     </BrowserRouter>
   </React.StrictMode>
 );
