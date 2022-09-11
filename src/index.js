@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import BeersOverview from './pages/BeersOverview';
 import BeersDetails from './pages/BeersDetails';
+import RandomBeers from './pages/beersRandom/RandomBeers' 
 import Home from './pages/Home';
 import reportWebVitals from './reportWebVitals';
 
@@ -15,8 +16,9 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<Home />} />                               {/* <-- notiz zu'/' */}
         <Route path='/beersoverview' element={<BeersOverview />} />
+        <Route path='/randombeers' element={<RandomBeers />} />
         <Route path='/beersovervuew/:beersid' element={<BeersDetails />} />
       </Routes>
     </BrowserRouter>

@@ -11,7 +11,7 @@ const Home = () => {
             <div className='homeImageallBeersContainer'>
                 <img src={allBeersPic} alt="" />
                 <div className='homeAllbearsBtn'>
-                    <Link to='/beersOverview'>All Beers</Link>
+                    <Link to='/beersoverview'>All Beers</Link>
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur </p>
             </div>
@@ -26,4 +26,4 @@ const Home = () => {
         </div>
     )
 }
-export default Home
+export default Home 

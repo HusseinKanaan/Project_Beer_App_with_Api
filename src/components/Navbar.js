@@ -1,11 +1,11 @@
 import './Navbar.css'
+import logoNavbar from '../img/Logo.svg'
 
 const Navbar= ()=> {
     return(
         <>
         <footer>
-            <div className='imageContainer'>
-            </div>
+                <div className='imageContainer'><img src={logoNavbar} alt={""} height={50}/></div>
         </footer>
         </>
     )

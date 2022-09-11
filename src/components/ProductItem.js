@@ -1,4 +1,5 @@
-/* import BeersOverview from '../pages/BeersOverview'
+/* import BeersOverview from '../pages/BeersOverview'        // zweite Schreibweise
+
 import Navbar from './Navbar' */
 
 /* const ProductItem = (props)=>{

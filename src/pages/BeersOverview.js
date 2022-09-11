@@ -34,26 +34,27 @@ const BeersOverview = () => {
         <>
             <h1>Übersicht</h1>
             {products.map((i, e) => {
-                
+
                 return (
                     <section key={e} className='allBeersConainer'>
-                        
+
                         <div className='imagesApi'>
                             <img src={i.image_url} alt="" height={130} />
                         </div>
 
                         <div className='itemContainer'>
                             <h3>{i.name}</h3>
-                            <p>{i._id}</p>
                             <p className="fontStyle">{i.tagline}</p>
                             <p>{i.contributed_by}</p>
                             <p>Hallo</p>
-                            <Link id={i._id} to={`/beersovervuew/${i._id}`}>Details</Link>
+                            <div className="btnOverview">
+                                <Link id={i._id} to={`/beersovervuew/${i._id}`}>Details</Link>
+                            </div>
                         </div>
                     </section>
                 )
             })}
-            <Navbar />
+            <Navbar />          
         </>
     )
 }
